@@ -1,0 +1,39 @@
+{
+    "name": "AJA Kumo",
+    "type": "HTTP",
+    "path": "Video Switchers",
+    "version": "1.0.0",
+    "description": "Control AJA Kumo video matrix routers via HTTP.",
+    "url": "https://www.aja.com/products/kumo",
+    "downloadURL": "",
+    "hasInput": true,
+    "hasOutput": true,
+    "hideDefaultCommands": true,
+    "hideDefaultParameters": [
+        "protocol",
+        "autoAdd"
+    ],
+    "defaults": {
+        "baseAddress": "http://192.168.1.145/",
+        "autoAdd": false,
+        "protocol": "HTTP"
+    },
+    "parameters": {},
+    "scripts": [
+        "AjaKumo.js"
+    ],
+    "values": {
+
+    },
+    "commands": {
+        "Route Input to Output": {
+            "menu": "",
+            "callback": "routeInputToOutput",
+            "parameters": {
+                "Input": {"type": "Integer", "default": 1},
+                "Output": {"type": "Integer", "default": 1}
+            }
+        }
+
+    }
+} 
